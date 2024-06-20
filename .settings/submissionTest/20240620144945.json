@@ -1,0 +1,9 @@
+{
+   "charset": "UTF-8",
+   "reqMethod": "GET",
+   "serviceURL": "http://127.0.0.1:50485/edu/data/userInfo.json",
+   "contentType": "application/json",
+   "requestContent": "{\"dataList3\": [\n   {\n      \"pfromDate\": \"data_0_4\",\n      \"ptoDate\": \"data_0_5\",\n      \"ppage\": \"data_0_6\",\n      \"psize\": \"data_0_7\",\n      \"pphone\": \"data_0_2\",\n      \"pname\": \"data_0_0\",\n      \"pteam\": \"data_0_1\",\n      \"pgender\": \"data_0_3\"\n   },\n   {\n      \"pfromDate\": \"data_1_4\",\n      \"ptoDate\": \"data_1_5\",\n      \"ppage\": \"data_1_6\",\n      \"psize\": \"data_1_7\",\n      \"pphone\": \"data_1_2\",\n      \"pname\": \"data_1_0\",\n      \"pteam\": \"data_1_1\",\n      \"pgender\": \"data_1_3\"\n   }\n]}",
+   "responseContent": "{\"dc_userInfo\":{\n\t\t\"ZIP_CD\": \"700251\",\n\t\t\"ASSIGNED_TASK\": null,\n\t\t\"GENDER_CD\": \"M\",\n\t\t\"JOIN_DATE\": \"20041008\",\n\t\t\"DUTY_CD\": \"04\",\n\t\t\"UPDATED_DATE\": \"2016-12-07\",\n\t\t\"ADDRESS2\": \"  \",\n\t\t\"CREATED_DATE\": \"2016-12-07\",\n\t\t\"EMP_CD\": 10000004,\n\t\t\"ADDRESS1\": \"대구 중구 서문로1가\",\n\t\t\"ROLE_CD\": \"03\",\n\t\t\"POSITION_CD\": \"04\",\n\t\t\"EMP_NM\": \"미길동\",\n\t\t\"EMAIL\": \"woka436@inswave03.com\"\n}}",
+   "sendTime": "2024-06-20 14:49:45"
+}

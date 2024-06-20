@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" repeatNode="map" id="gender-dl" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="name" name="name" dataType="text"></w2:column>
+        				<w2:column id="value" name="value" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data>
+        				<w2:row>
+        					<name><![CDATA[Male]]></name>
+        					<value><![CDATA[male]]></value>
+        				</w2:row>
+        				<w2:row>
+        					<name><![CDATA[Female]]></name>
+        					<value><![CDATA[female]]></value>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList baseNode="list" repeatNode="map" id="employee" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="name" name="name" dataType="text"></w2:column>
+        				<w2:column id="birthDate" name="birthDate" dataType="text"></w2:column>
+        				<w2:column id="gender" name="gender" dataType="text"></w2:column>
+        				<w2:column id="phone" name="phone" dataType="text"></w2:column>
+        				<w2:column id="email" name="email" dataType="text"></w2:column>
+        				<w2:column id="address" name="address" dataType="text"></w2:column>
+        				<w2:column id="team" name="team" dataType="text"></w2:column>
+        				<w2:column id="status" name="status" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        		<w2:dataMap id="dc_userInfo">
+        			<w2:keyInfo>
+        				<w2:key id="ZIP_CD" name="ZIP_CD" dataType="text"></w2:key>
+        				<w2:key id="GENDER_CD" name="GENDER_CD" dataType="text"></w2:key>
+        				<w2:key id="JOIN_DATE" name="JOIN_DATE" dataType="text"></w2:key>
+        				<w2:key id="DUTY_CD" name="DUTY_CD" dataType="text"></w2:key>
+        				<w2:key id="UPDATED_DATE" name="UPDATED_DATE" dataType="text"></w2:key>
+        				<w2:key id="ADDRESS2" name="ADDRESS2" dataType="text"></w2:key>
+        				<w2:key id="CREATED_DATE" name="CREATED_DATE" dataType="text"></w2:key>
+        				<w2:key id="EMP_CD" name="EMP_CD" dataType="text"></w2:key>
+        				<w2:key id="ADDRESS1" name="ADDRESS1" dataType="text"></w2:key>
+        				<w2:key id="ROLE_CD" name="ROLE_CD" dataType="text"></w2:key>
+        				<w2:key id="POSITION_CD" name="POSITION_CD" dataType="text"></w2:key>
+        				<w2:key id="EMP_NM" name="EMP_NM" dataType="text"></w2:key>
+        				<w2:key id="EMAIL" name="EMAIL" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<ZIP_CD><![CDATA[700251]]></ZIP_CD>
+        				<GENDER_CD><![CDATA[M]]></GENDER_CD>
+        				<JOIN_DATE><![CDATA[20041008]]></JOIN_DATE>
+        				<DUTY_CD><![CDATA[04]]></DUTY_CD>
+        				<UPDATED_DATE><![CDATA[2016-12-07]]></UPDATED_DATE>
+        				<ADDRESS2><![CDATA[  ]]></ADDRESS2>
+        				<CREATED_DATE><![CDATA[2016-12-07]]></CREATED_DATE>
+        				<EMP_CD><![CDATA[10000004]]></EMP_CD>
+        				<ADDRESS1><![CDATA[대구 중구 서문로1가]]></ADDRESS1>
+        				<ROLE_CD><![CDATA[03]]></ROLE_CD>
+        				<POSITION_CD><![CDATA[04]]></POSITION_CD>
+        				<EMP_NM><![CDATA[미길동]]></EMP_NM>
+        				<EMAIL><![CDATA[woka436@inswave03.com]]></EMAIL>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap baseNode="map" id="params">
+        			<w2:keyInfo>
+        				<w2:key id="pteam" name="team" dataType="text"></w2:key>
+        				<w2:key id="pname" name="name" dataType="text"></w2:key>
+        				<w2:key id="pphone" name="phone" dataType="text"></w2:key>
+        				<w2:key id="pgender" name="gender" dataType="text"></w2:key>
+        				<w2:key id="pfromDate" name="fromDate" dataType="text"></w2:key>
+        				<w2:key id="ptoDate" name="toDate" dataType="text"></w2:key>
+        				<w2:key id="ppage" name="page" dataType="number"></w2:key>
+        				<w2:key id="psize" name="size" dataType="number"></w2:key>
+        			</w2:keyInfo>
+        		</w2:dataMap>
+        		<w2:dataList baseNode="list" id="team_dl" repeatNode="map" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="tname" name="name" dataType="text"></w2:column>
+        				<w2:column id="tvalue" name="value" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data>
+        				<w2:row>
+        					<tname><![CDATA[team 1]]></tname>
+        					<tvalue><![CDATA[team1]]></tvalue>
+        				</w2:row>
+        				<w2:row>
+        					<tname><![CDATA[team 2]]></tname>
+        					<tvalue><![CDATA[team2]]></tvalue>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList6" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="tname" name="name" dataType="text"></w2:column>
+        				<w2:column id="tvalue" name="value" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data>
+        				<w2:row>
+        					<tname><![CDATA[team 1]]></tname>
+        					<tvalue><![CDATA[team1]]></tvalue>
+        				</w2:row>
+        				<w2:row>
+        					<tname><![CDATA[team 2]]></tname>
+        					<tvalue><![CDATA[team2]]></tvalue>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="employee_list">
+					<w2:columnInfo>
+						<w2:column id="id" name="id" dataType="text"></w2:column>
+						<w2:column id="name" name="name" dataType="text"></w2:column>
+						<w2:column id="team" name="team" dataType="text"></w2:column>
+						<w2:column id="email" name="email" dataType="text"></w2:column>
+						<w2:column id="phone" name="phone" dataType="text"></w2:column>
+						<w2:column id="gender" name="gender" dataType="text"></w2:column>
+						<w2:column id="status" name="status" dataType="text"></w2:column>
+						<w2:column id="address" name="address" dataType="text"></w2:column>
+						<w2:column id="birthDate" name="birthDate" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data xmlns="">
+						<w2:row>
+							<id><![CDATA[df1c5fd1-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 1]]></name>
+							<team><![CDATA[Team 1]]></team>
+							<email><![CDATA[Email 1]]></email>
+							<phone><![CDATA[Phone 1]]></phone>
+							<gender><![CDATA[Gender 1]]></gender>
+							<status><![CDATA[Status 1]]></status>
+							<address><![CDATA[Address 1]]></address>
+							<birthDate><![CDATA[2024-02-29 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6e4b-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 2]]></name>
+							<team><![CDATA[Team 2]]></team>
+							<email><![CDATA[Email 2]]></email>
+							<phone><![CDATA[Phone 2]]></phone>
+							<gender><![CDATA[Gender 2]]></gender>
+							<status><![CDATA[Status 2]]></status>
+							<address><![CDATA[Address 2]]></address>
+							<birthDate><![CDATA[2024-02-12 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6e82-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 3]]></name>
+							<team><![CDATA[Team 3]]></team>
+							<email><![CDATA[Email 3]]></email>
+							<phone><![CDATA[Phone 3]]></phone>
+							<gender><![CDATA[Gender 3]]></gender>
+							<status><![CDATA[Status 3]]></status>
+							<address><![CDATA[Address 3]]></address>
+							<birthDate><![CDATA[2023-08-16 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6e8e-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 4]]></name>
+							<team><![CDATA[Team 4]]></team>
+							<email><![CDATA[Email 4]]></email>
+							<phone><![CDATA[Phone 4]]></phone>
+							<gender><![CDATA[Gender 4]]></gender>
+							<status><![CDATA[Status 4]]></status>
+							<address><![CDATA[Address 4]]></address>
+							<birthDate><![CDATA[2024-04-18 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6e99-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 5]]></name>
+							<team><![CDATA[Team 5]]></team>
+							<email><![CDATA[Email 5]]></email>
+							<phone><![CDATA[Phone 5]]></phone>
+							<gender><![CDATA[Gender 5]]></gender>
+							<status><![CDATA[Status 5]]></status>
+							<address><![CDATA[Address 5]]></address>
+							<birthDate><![CDATA[2024-02-21 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6ea5-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 6]]></name>
+							<team><![CDATA[Team 6]]></team>
+							<email><![CDATA[Email 6]]></email>
+							<phone><![CDATA[Phone 6]]></phone>
+							<gender><![CDATA[Gender 6]]></gender>
+							<status><![CDATA[Status 6]]></status>
+							<address><![CDATA[Address 6]]></address>
+							<birthDate><![CDATA[2024-05-04 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6ead-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 7]]></name>
+							<team><![CDATA[Team 7]]></team>
+							<email><![CDATA[Email 7]]></email>
+							<phone><![CDATA[Phone 7]]></phone>
+							<gender><![CDATA[Gender 7]]></gender>
+							<status><![CDATA[Status 7]]></status>
+							<address><![CDATA[Address 7]]></address>
+							<birthDate><![CDATA[2023-10-25 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6eb9-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 8]]></name>
+							<team><![CDATA[Team 8]]></team>
+							<email><![CDATA[Email 8]]></email>
+							<phone><![CDATA[Phone 8]]></phone>
+							<gender><![CDATA[Gender 8]]></gender>
+							<status><![CDATA[Status 8]]></status>
+							<address><![CDATA[Address 8]]></address>
+							<birthDate><![CDATA[2023-07-30 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6ec0-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 9]]></name>
+							<team><![CDATA[Team 9]]></team>
+							<email><![CDATA[Email 9]]></email>
+							<phone><![CDATA[Phone 9]]></phone>
+							<gender><![CDATA[Gender 9]]></gender>
+							<status><![CDATA[Status 9]]></status>
+							<address><![CDATA[Address 9]]></address>
+							<birthDate><![CDATA[2023-12-18 00:00:00.000000]]></birthDate>
+						</w2:row>
+						<w2:row>
+							<id><![CDATA[df1c6ec8-2ede-11ef-8330-002248cd044a]]></id>
+							<name><![CDATA[Name 10]]></name>
+							<team><![CDATA[Team 10]]></team>
+							<email><![CDATA[Email 10]]></email>
+							<phone><![CDATA[Phone 10]]></phone>
+							<gender><![CDATA[Gender 10]]></gender>
+							<status><![CDATA[Status 10]]></status>
+							<address><![CDATA[Address 10]]></address>
+							<birthDate><![CDATA[2023-08-14 00:00:00.000000]]></birthDate>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="getEmployee" ref="data:json,params" target="data:json,employee_list" action="/edu/data/employeeList.json" method="get"
+        		mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+
+    // call api
+
+    var dummyData = [
+        {"name": "Team 1", value: 1},
+        {"name": "Team 2", value: 2},
+        {"name": "Team 3", value: 3},
+    ]
+
+    dataList1.setJSON(dummyData)
+	
+};
+
+scwin.search_btn_onclick = function(e) {
+$p.executeSubmission("getEmployee");
+};
+
+const callApi = () => {
+    var options = {};
+options.action = "/test.jsp";
+options.mode = "asynchronous";
+options.mediatype = "text/json";
+options.method = "POST";
+options.requestData = '{ "name" : "WebSquare" , "addr" : "서울시" }';
+options.requestHeader = {insUserData:"w5Edu"};
+options.success = doSucess;     //정의 된 function 객체
+    options.error = function( e ){      
+
+    };
+$w.ajax( options );
+
+//위의 예시 중 options.success에 지정 한 callback Function 정의 형태.
+function doSucess( e ){
+
+    //e는 웹스퀘어 엔진에서 통신 후 결과를 담을 JSON 객체이다.
+    //e.resourceUri - 통신 URI 반환
+    //e.responseHeaders - Response Headers 내용 반환
+    //e.responseStatusCode - Response Status Code 반환
+    //e.responseReasonPhrase - Response Status Text 반환
+    //e.responseBody - Response Data를 XML 데이터로 parse 한 XML 객체 반환.( Response Content-Type이 JSON 인 경우 json객체를 XML로 parse)
+    //e.responseText - Response Data 원본으로 String 형태 반환
+
+    //responseText를 alert으로 출력.
+    alert("success\n"+e.responseText);
+}
+
+}
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group id="" style="position:relative; width:100%;max-width: 1200px;min-height:100vh;margin: auto;padding: 50px 0;"
+    		min-height="100vh">
+    		<xf:group id=""
+    			style="position: relative;width: 100%;max-width: 1000px;margin: auto;height:200px;border-color:#C0C0C0;border-width:1px;border-style:solid;display: grid;grid-template-columns: repeat(3, 1fr);gap: 10px;">
+    			<xf:group id=""
+    				style="position:relative;grid-column: 1;display: flex;    justify-content: center;    align-items: center;    gap: 20px;">
+
+    				<w2:span label="Name" style="position: relative; width:auto;" id=""></w2:span>
+    				<xf:input id="name" style="position: relative; width:144px; height:21px; padding: 5px 10px;"
+    					ref="data:dataList3.pname">
+    				</xf:input>
+    			</xf:group>
+    			<xf:group id="" style="position:relative;display: flex;justify-content: center;align-items: center;gap: 20px;">
+    				<w2:span id="" label="Team" style="position: relative; width:auto;"></w2:span>
+    				<xf:select1 id="team" chooseOption="" style="position: relative; width:144px; height:21px; padding: 5px 10px;"
+    					submenuSize="auto" allOption="" disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled"
+    					ref="data:dataList3.pteam">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:team_dl">
+    							<xf:label ref="name"></xf:label>
+    							<xf:value ref="value"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    			<xf:group id="" style="position:relative;display: flex;justify-content: center;align-items: center;gap: 20px;">
+    				<w2:span id="" label="Phone" style="position: relative; width:auto;"></w2:span>
+    				<xf:input id="phone" style="position: relative; width:144px; height:21px; padding: 5px 10px;" dataType="number"
+    					type="number" ref="data:dataList3.pphone">
+    				</xf:input>
+    			</xf:group>
+    			<xf:group id="" style="position:relative;display: flex;justify-content: center;align-items: center;gap: 20px;">
+    				<w2:span id="" label="Gender" style="position: relative; width:auto;"></w2:span>
+    				<xf:select1 allOption="" appearance="minimal" chooseOption="" direction="auto" disabled="false"
+    					disabledClass="w2selectbox_disabled" id="gender" style="position: relative; width:144px; height:21px; padding: 5px 10px;"
+    					submenuSize="auto" ref="data:dataList3.pgender">
+    					<xf:choices>
+    						<xf:itemset nodeset="data:gender-dl">
+    							<xf:label ref="name"></xf:label>
+    							<xf:value ref="value"></xf:value>
+    						</xf:itemset>
+    					</xf:choices>
+    				</xf:select1>
+    			</xf:group>
+    			<xf:group id="" style="position:relative;display: flex;justify-content: center;align-items: center;gap: 20px;">
+    				<w2:span id="" label="Birth From" style="position: relative; width:auto;"></w2:span>
+    				<xf:input dataType="date" id="birth_from" style="position: relative; width:144px; height:21px; padding: 5px 10px;"
+    					type="date" ref="data:dataList3.pfromDate">
+    				</xf:input>
+    			</xf:group>
+    			<xf:group id="" style="position:relative;display: flex;justify-content: center;align-items: center;gap: 20px;">
+    				<w2:span id="" label="Bitth To" style="position: relative; width:auto;"></w2:span>
+    				<xf:input dataType="date" id="birth_to" style="position: relative; width:144px; height:21px; padding: 5px 10px;"
+    					type="date" ref="data:dataList3.ptoDate">
+    				</xf:input>
+    			</xf:group>
+    			<xf:group id="" style="position: relative;grid-c"></xf:group>
+    			<xf:group id="" style="position: relative;grid-c"></xf:group>
+    			<xf:group id="" style="position:relative;display: flex;justify-content: end;align-items: center;padding-right: 52px;">
+    				<xf:trigger type="button" id="search_btn" style="position: relative; width:80px; height:23px;"
+    					ev:onclick="scwin.search_btn_onclick">
+    					<xf:label><![CDATA[Search]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    	
+    	<w2:gridView checkAllType="false" defaultCellHeight="20" id=""
+    		style="position:absolute;top:339px;left:573px;width:979px;height:220px;" dataList="data:employee_list">
+			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+			<w2:header style="" id="header1">
+			<w2:row style="" id="row1">
+			<w2:column width="65" inputType="text" style="" id="column10" value="" displayMode="label"></w2:column>
+			<w2:column width="100" inputType="text" style="" id="column9" value="Name" displayMode="label"></w2:column>
+			<w2:column width="100" inputType="text" style="" id="column8" value="Birth Date" displayMode="label"></w2:column>
+			<w2:column width="82" inputType="text" style="" id="column7" value="Gender" displayMode="label"></w2:column>
+			<w2:column width="100" inputType="text" style="" id="column6" value="Phone" displayMode="label"></w2:column>
+			<w2:column width="100" inputType="text" style="" id="column5" value="Email" displayMode="label"></w2:column>
+			<w2:column width="118" inputType="text" style="" id="column4" value="Address" displayMode="label"></w2:column>
+			<w2:column width="111" inputType="text" style="" id="column3" value="Team" displayMode="label"></w2:column>
+			<w2:column width="70" inputType="text" style="" id="column2" value="Status" displayMode="label"></w2:column>
+			<w2:column width="85" inputType="text" style="" id="column1" value="Action" displayMode="label"></w2:column>
+			</w2:row>
+			</w2:header>
+			<w2:gBody style="" id="gBody1">
+			<w2:row style="" id="row2">
+			<w2:column width="65" inputType="text" style="" id="column20" value="" displayMode="label"></w2:column>
+			<w2:column width="100" inputType="text" style="" id="name" value="" displayMode="label"></w2:column>
+			<w2:column width="100" inputType="text" style="" id="birthDate" value="" displayMode="label"></w2:column>
+			<w2:column width="82" inputType="text" style="" id="gender" value="" displayMode="label"></w2:column>
+			<w2:column width="100" inputType="text" style="" id="phone" value="" displayMode="label"></w2:column>
+			<w2:column width="100" inputType="text" style="" id="email" value="" displayMode="label"></w2:column>
+			<w2:column width="118" inputType="text" style="" id="address" value="" displayMode="label"></w2:column>
+			<w2:column width="111" inputType="text" style="" id="team" value="" displayMode="label"></w2:column>
+			<w2:column width="70" inputType="text" style="" id="status" value="" displayMode="label"></w2:column>
+			<w2:column width="85" inputType="text" style="" id="action" value="" displayMode="label"></w2:column>
+			<w2:column width="85" inputType="text" style="" id="action" value="Edit" displayMode="label"></w2:column>
+			</w2:row>
+			</w2:gBody>
+		</w2:gridView>
+
+    </body>
+</html>
